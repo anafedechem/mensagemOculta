@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <h2>CODIFICADOR/DECODIFICADOR</h2>
+    <div class="workspace">
+        <form>
+            <label for="codificar"> Dados a codificar</label><input type="text">
+            <br>
+            <label for="codificado"> Dados codificados</label> <input type="text">
+            <div id="incr">
+                <br>
+                <label for="incrementar"> Valor do Incremento</label> <input type="text">
+            </div>
+        </form>
+        <div class="radios">
+            <input type="radio" id="codificar">
+            <label for="codificar">Codificar</label><br>
+
+            <input type="radio" id="decodificar">
+            <label for="decodificar">Decodificar</label><br>
+        </div>
+        <div class="select">
+            <select id="bases" onchange="fornecerIncremento()">
+                <option value="cifra">Cifra de Cesar</option>
+                <option value="base">Base 64</option>
+            </select>
+        </div>
+    </div>
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

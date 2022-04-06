@@ -1,0 +1,83 @@
+body{
+    background-image: url(./background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h2{
+    font-family: 'PT Mono', monospace;
+    color: black;
+    width: 40%;
+    height: fit-content;
+    padding: 8px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+}
+
+.workspace {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: fit-content;
+    background-color: lightgrey;
+    border-radius: 10px;
+    font-family: 'PT Mono', monospace;
+}
+
+input{
+    height: 25px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    display: flex;
+    font-size: large;
+    font-family: 'PT Mono', monospace;
+    color: darkgoldenrod
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+select, option {
+    background-color: rosybrown;
+    border: 3px solid lightgrey;
+    padding: 3px;
+    height: fit-content;
+    border-radius: 10px;
+    font-size: large;
+}
+
+select:hover, input:hover{
+    border: solid black;
+}
+select:active {
+    background-color: lightgrey;
+}
+
+.radios{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+label:hover, h2:hover {
+    font-style: oblique;
+}
