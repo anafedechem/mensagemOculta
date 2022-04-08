@@ -17,23 +17,28 @@
     <h2>CODIFICADOR/DECODIFICADOR</h2>
     <div class="workspace">
         <form>
-            <label for="codificar"> Dados a codificar</label><input type="text">
+            <label for="codificar"> Dados a codificar</label><input type="text" id="dadosACodificar">
             <br>
-            <label for="codificado"> Dados codificados</label> <input type="text">
+            <label for="codificado"> Dados codificados</label> <input disabled type="text" id="dadosDecodificados">
             <div id="incr">
                 <br>
-                <label for="incrementar"> Valor do Incremento</label> <input type="text">
+                <label for="incrementar"> Valor do Incremento</label> <input type="number" value="" id="valorDoIncremento">
             </div>
         </form>
         <div class="radios">
-            <input type="radio" id="codificar">
+            <input type="radio" id="codificar" value="codificar" name="radioSelecionado" onclick="alterarTextoDoBotao(this)">
             <label for="codificar">Codificar</label><br>
 
-            <input type="radio" id="decodificar">
+            <input type="radio" id="decodificar" value="decodificar" name="radioSelecionado" onclick="alterarTextoDoBotao(this)">
             <label for="decodificar">Decodificar</label><br>
         </div>
+
+        <div>
+            <button id="btnCodDecod" onclick="mostrarResultado()">Vai codificar ou decodificar?</button>
+        </div>
+        <br>
         <div class="select">
-            <select id="bases" onchange="fornecerIncremento()">
+            <select id="bases" onchange="aparecerCampoFornecerIncremento()">
                 <option value="cifra">Cifra de Cesar</option>
                 <option value="base">Base 64</option>
             </select>
